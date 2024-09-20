@@ -1,4 +1,4 @@
-import 'package:day_1/GestureDetector.dart';
+import 'package:day_1/ListView.dart';
 import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Gesturedetector(),
+      home: Listview(),
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:day_1/GridVeiw.dart';
+import 'package:day_1/GridView.dart';
 import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());

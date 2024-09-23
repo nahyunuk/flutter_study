@@ -1,7 +1,46 @@
 import 'package:flutter/material.dart';
 
 class Gridveiw extends StatelessWidget {
-  const Gridveiw({super.key});
+  Gridveiw({super.key});
+
+  final postList = [
+    {
+      "number": "0",
+      "color": Colors.amber,
+    },
+    {
+      "number": "1",
+      "color": Colors.redAccent,
+    },
+    {
+      "number": "2",
+      "color": Colors.blueAccent,
+    },
+    {
+      "number": "3",
+      "color": Colors.deepOrange,
+    },
+    {
+      "number": "4",
+      "color": Colors.purpleAccent,
+    },
+    {
+      "number": "5",
+      "color": Colors.greenAccent,
+    },
+    {
+      "number": "6",
+      "color": Colors.lightBlue,
+    },
+    {
+      "number": "7",
+      "color": Colors.lime,
+    },
+    {
+      "number": "8",
+      "color": Colors.indigo,
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -9,27 +48,18 @@ class Gridveiw extends StatelessWidget {
       appBar: AppBar(
         title: Text("Test title"),
       ),
-      body: GridView(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 15.0, //열 사이의 공간
-          mainAxisSpacing: 12.0,
-        ),
-        children: [
-          postContainer(number: "1",colorData: Colors.amber),
-          postContainer(number: "2", colorData: Colors.greenAccent),
-          postContainer(number: "3", colorData: Colors.redAccent),
-          postContainer(number: "4", colorData: Colors.amberAccent),
-          postContainer(number: "5",colorData: Colors.amber),
-          postContainer(number: "6", colorData: Colors.greenAccent),
-          postContainer(number: "7", colorData: Colors.redAccent),
-          postContainer(number: "8", colorData: Colors.amberAccent),
-          postContainer(number: "9",colorData: Colors.amber),
-          postContainer(number: "10", colorData: Colors.greenAccent),
-          postContainer(number: "11", colorData: Colors.redAccent),
-          postContainer(number: "12", colorData: Colors.amberAccent),
-        ],
-      ),
+      body: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 15.0,
+            mainAxisSpacing: 12.0,
+          ),
+          itemCount: postList.length,
+          itemBuilder: (BuildContext con, int index) {
+            return postContainer(
+                number: postList[index]["number"] as String,
+                colorData: postList[index]["color"] as Color);
+          }),
     );
   }
 

@@ -1,2 +1,12 @@
-*.c++ linguist-detectable=false
-*.c linguist-detectable=false
+# C files
+*.c
+*.h
+
+# C++ files
+*.cpp
+*.hpp
+*.cc
+*.hh
+*.cxx
+*.hxx
+*.ino

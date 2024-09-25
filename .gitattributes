@@ -5,3 +5,5 @@
 
 *.md linguist-vendored
 *.md linguist-generated
+*.markdown linguist-vendored
+

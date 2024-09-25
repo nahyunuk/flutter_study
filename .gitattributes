@@ -1,0 +1,12 @@
+# C files
+*.c
+*.h
+
+# C++ files
+*.cpp
+*.hpp
+*.cc
+*.hh
+*.cxx
+*.hxx
+*.ino

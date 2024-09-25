@@ -1,12 +1,9 @@
-# C files
-*.c
-*.h
+*.cpp linguist-vendored
+*.hpp linguist-vendored
+*.h linguist-vendored
+*.cc linguist-vendored
 
-# C++ files
-*.cpp
-*.hpp
-*.cc
-*.hh
-*.cxx
-*.hxx
-*.ino
+*.md linguist-vendored
+*.md linguist-generated
+*.markdown linguist-vendored
+

@@ -23,9 +23,7 @@ class Alertdialog extends StatelessWidget {
                           SingleChildScrollView(child: Text("Dialog content")),
                     ),
                     actions: [
-                      TextButton(
-                          onPressed: () {},
-                          child: Text("Yes")),
+                      TextButton(onPressed: () {}, child: Text("Yes")),
                       TextButton(
                           onPressed: () => Navigator.of(context).pop(),
                           child: Text("Close"))

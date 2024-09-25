@@ -2,3 +2,5 @@
 *.hpp linguist-vendored
 *.h linguist-vendored
 *.cc linguist-vendored
+
+*.md linguist-vendored

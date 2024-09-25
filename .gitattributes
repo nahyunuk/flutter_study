@@ -4,3 +4,4 @@
 *.cc linguist-vendored
 
 *.md linguist-vendored
+*.md linguist-generated
